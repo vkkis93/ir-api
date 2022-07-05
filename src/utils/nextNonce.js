@@ -1,7 +1,4 @@
 // eslint-disable-next-line fp/no-let
-let nonce = Date.now()
-
-// eslint-disable-next-line fp/no-mutation
-const nextNonce = () => nonce++
+const nextNonce = () => +new Date()
 
 module.exports = nextNonce
